@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/tecnologia">Tecnologia</a>
+      </li>
+      <li>
+        <a href="/cadastro">Cadastro de Clientes</a>
+      </li>
+      <li>
+        <a href="/alteracao">Altera Clientes</a>
+      </li>
+
+      <li>
+        <a href="/lista_clientes">Lista de Clientes</a>
+      </li>
+    </nav>
+    <main>
+      <div id="caixa_formulario">
+        <form action="/add_cliente" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required name="nome" />
+
+          <label for="cpf">CPF:</label>
+          <input type="number" id="cpf" required name="cpf" />
+
+          <label for="celular">Celular:</label>
+          <input type="celular" id="celular" required name="celular" />
+
+          <label for="datanasc">Data Nasc:</label>
+          <input type="date" required name="datanasc" id="datanasc" />
+
+          <button type="submit">Cadastrar</button>
+        </form>
+        <h3><%= mensagem %></h3>
+      </div>
+    </main>
+  </body>
+</html>

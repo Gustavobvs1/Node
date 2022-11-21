@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alteração do CPF</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/tecnologia">Tecnologia</a>
+      </li>
+      <li>
+        <a href="/cadastro">Cadastro de Clientes</a>
+      </li>
+      <li>
+        <a href="/alteracao">Altera Clientes</a>
+      </li>
+
+      <li>
+        <a href="/lista_clientes">Lista de Clientes</a>
+      </li>
+    </nav>
+    <main>
+      <h1 id="titulo">Alteração do CPF</h1>
+      <div id="caixa_formulario">
+        <form action="/altera_cpf" method="post">
+          <label for="cpf"
+            >Digite o numero do seu CPF para alteração do cadastro</label
+          >
+          <input type="number" id="cpf" required name="cpf" />
+
+          <label for="celular"
+            >Digite o numero do seu celular para efetuar a busca</label
+          >
+          <input type="celular" id="celular" required name="celular" />
+
+          <button type="submit">Alterar CPF</button>
+        </form>
+        <h3><%= mensagem %></h3>
+      </div>
+    </main>
+  </body>
+</html>

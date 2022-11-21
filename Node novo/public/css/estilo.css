@@ -1,0 +1,104 @@
+body {
+  background-color: aquamarine;
+  margin: 0;
+}
+
+#titulo {
+  text-align: center;
+  font-family: "Comic Sans Ms";
+  font-size: 2em;
+}
+
+.subtitulo {
+  font-family: arial;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+p {
+  font-family: arial;
+  font-size: 17px;
+}
+
+#caixa_formulario {
+  width: 300px;
+  margin: auto;
+  font-family: arial;
+  font-size: 13px;
+}
+
+#caixa_formulario label {
+  display: block;
+  margin: 10px 0px 0px 0px;
+}
+
+nav {
+  background-color: rgb(98, 199, 175);
+  display: grid;
+  grid-template-columns: 17% 17% 17% 17% 17%;
+  column-gap: 4%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav li {
+  list-style-type: none;
+  display: grid;
+}
+nav a {
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 1.5% 0 1.5% 0;
+  min-width: 0;
+}
+nav a:hover {
+  background-color: rgb(83, 170, 141);
+  color: #000000;
+}
+main {
+  margin-top: 4%;
+}
+
+input {
+  background-color: #b2ee87;
+  border: 1px solid #193a8e;
+  border-radius: 8px;
+  color: #1c57ea;
+}
+
+button {
+  background-color: orange;
+  color: #505050;
+  font-weight: bold;
+  font-family: verdana;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#tabela {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 40%;
+}
+
+.celula {
+  font-family: verdana;
+  font-size: 1em;
+  border: 2px solid #073c42cc;
+  padding: 10px;
+  text-align: center;
+}
+
+.celula_titulo {
+  font-family: verdana;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #175e66cc;
+  background-color: #0dbcb1;
+}

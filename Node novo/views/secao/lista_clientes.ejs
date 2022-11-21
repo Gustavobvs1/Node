@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/tecnologia">Tecnologia</a>
+      </li>
+      <li>
+        <a href="/cadastro">Cadastro de Clientes</a>
+      </li>
+      <li>
+        <a href="/alteracao">Altera Clientes</a>
+      </li>
+
+      <li>
+        <a href="/lista_clientes">Lista de Clientes</a>
+      </li>
+    </nav>
+    <main>
+      <article>
+        <header>
+          <h1 id="titulo">Lista de Clientes</h1>
+        </header>
+        <div id="tabela">
+          <div class="celula_titulo">Nome</div>
+          <div class="celula_titulo">CPF</div>
+          <div class="celula_titulo">Celular</div>
+          <% clientes.forEach(regClientes => { %>
+            <div class="celula" >
+              <%= regClientes.dataValues.nome %>
+            </div>
+            <div class="celula">
+              <%= regClientes.dataValues.cpf %>
+            </div>
+            <div class="celula">
+              <%= regClientes.dataValues.celular %>
+            </div>
+          </tr>
+          <% }) %>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

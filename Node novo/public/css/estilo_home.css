@@ -1,0 +1,31 @@
+body {
+  background-color: aquamarine;
+}
+
+#titulo {
+  text-align: center;
+  font-family: "Comic Sans Ms";
+  font-size: 2em;
+}
+
+.subtitulo {
+  font-family: arial;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+p {
+  font-family: arial;
+}
+
+#caixa_formulario {
+  width: 300px;
+  margin: auto;
+  font-family: arial;
+  font-size: 13px;
+}
+
+#caixa_formulario label {
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
